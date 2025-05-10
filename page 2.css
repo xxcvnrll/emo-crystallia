@@ -14,7 +14,6 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-
 }
 
 .text-image {
@@ -35,7 +34,6 @@ body {
 .about-kingdom:hover {
     color: white;
     transition: all 0.8s ease;
-
 }
 
 .about-kingdom,
@@ -104,7 +102,6 @@ a {
     font-family: 'Franklin Gothic Medium';
     font-weight: bold;
     cursor: pointer;
-
 }
 
 .picture-two {
@@ -113,7 +110,6 @@ a {
     float: right;
     height: 500px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.41);
-
 }
 
 /* картка з описом про королівство */
@@ -279,6 +275,7 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
 }
 
+/*напис карта*/
 .karta {
     text-align: center;
     color: rgb(99, 69, 189);
@@ -296,6 +293,7 @@ a {
     transition: all 0.8s ease;
 }
 
+/*зображення карти*/
 .map {
     width: 50%;
     height: 640px;
