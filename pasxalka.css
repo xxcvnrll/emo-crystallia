@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap");
+
+body {
+  background-image: url("https://i.postimg.cc/BnZ0dRzJ/Chat-GPT-Image-6-2025-21-20-35.png");
+}
+
+.back-menu {
+  text-decoration: none;
+  color: whitesmoke;
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  font-size: 30px;
+  font-family: "Cormorant Infant", serif;
+}
+
+.back-menu:hover {
+  color: rgb(146, 67, 225);
+  transition: 0.5s;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-top: 20px;
+  font-family: "Cormorant Infant", serif;
+}
+
+/* анімація появи тексту */
+h1{
+    opacity: 0; /*на початку цей текст буде невидимим*/
+    animation: fadeIn 1.5s ease-in forwards;/*тип анімації,тривалість,тип прискорення і зберагає кінцевий результат анімації */
+}
+
+@keyframes fadeIn { /*зробить анімацію видимою*/
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* картка один */
+.card-one {
+  width: 30%;
+  height: 300px;
+  background-color: darkslateblue;
+  margin-left: 20px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s ease-out-back(0.23, 1, 0.32, 1);
+}
+
+.card-one:hover {
+  transform:scale(1.1);/*картка збільшиться в розмірі на 10%*/
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* контейнер з усім змістом картки */
+.content-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-one:hover .content-card {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+/* заголовок картки 1 */
+.card-title-one {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  color: #0d0d0d;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* текст у середині картки 1 */
+.card-description-one {
+  margin: 10px 0 0;
+  font-size: 17px;
+  color: #777;
+  line-height: 1.4;
+  padding: 30px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+/* картка два */
+.card-two {
+  width: 30%;
+  height: 290px;
+  background-color: rgb(117, 105, 195);
+  margin-top: 28px;
+  margin-left: 20px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-two:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-two:hover .content-card {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+/* заголовок картки 2 */
+.card-title-two {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  color: #0d0d0d;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* текст у середині картки 2 */
+.card-description-two {
+  margin: 10px 0 0;
+  font-size: 17px;
+  color: #777;
+  line-height: 1.4;
+  padding: 30px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+/* картка 3 */
+.card-three {
+  width: 30%;
+  height: 290px;
+  background-color: rgb(117, 105, 195);
+  top: 13%;
+  left: 35%;
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-three:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-three:hover .content-card {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+/* заголовок картки 3 */
+.card-title-three {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  color: #0d0d0d;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* текст у середині картки 3 */
+.card-description-three {
+  margin: 10px 0 0;
+  font-size: 17px;
+  color: #777;
+  line-height: 1.4;
+  padding: 30px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+/* картка 4 */
+.card-four {
+  width: 30%;
+  height: 290px;
+  background-color: darkslateblue;
+  top: 57%;
+  left: 35%;
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-four:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-four:hover .content-card {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+/* заголовок картки 4 */
+.card-title-four {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  color: #0d0d0d;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* текст у середині картки 4 */
+.card-description-four {
+  margin: 10px 0 0;
+  font-size: 17px;
+  color: #777;
+  line-height: 1.4;
+  padding: 30px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+/* картка 5 */
+.card-five {
+  width: 30%;
+  height: 290px;
+  background-color: darkslateblue;
+  top: 13%;
+  left: 68%;
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-five:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-five:hover .content-card {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+/* заголовок картки 5*/
+.card-title-five {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  color: #0d0d0d;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* текст у середині картки 5 */
+.card-description-five {
+  margin: 10px 0 0;
+  font-size: 17px;
+  color: #777;
+  line-height: 1.4;
+  padding: 30px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+/* картка 6 */
+.card-six {
+  width: 30%;
+  height: 290px;
+  background-color: rgb(117, 105, 195);
+  top: 57%;
+  left: 68%;
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-six:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-six:hover .content-card {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+/* заголовок картки 6 */
+.card-title-six {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  color: #0d0d0d;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* текст у середині картки 6 */
+.card-description-six {
+  margin: 10px 0 0;
+  font-size: 17px;
+  color: #777;
+  line-height: 1.4;
+  padding: 30px;
+  font-family: 'Franklin Gothic Medium';
+}

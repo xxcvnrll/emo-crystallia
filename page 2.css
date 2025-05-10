@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+body {
+    margin: 0;
+    background: linear-gradient(#3b165c, #380f4d, #6f3a8a, #7f5f8c, #c4a1d1, #e8cbf2, #9273c7);
+}
+
+/* пасхалка з посиланням на іншу сторінку */
+.crystal {
+    width: 95px;
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.text-image {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.picture-one {
+    margin: 20px;
+    width: 97%;
+    height: 537px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.41);
+
+}
+
+.about-kingdom:hover {
+    color: white;
+    transition: all 0.8s ease;
+
+}
+
+.about-kingdom,
+.work-emotion {
+    margin-left: 60px;
+    font-size: 23px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(244, 185, 236, 0.712);
+    font-family: 'Geneva', Verdana, sans-serif;
+}
+
+.work-emotion:hover {
+    transition: all 0.8s ease;
+    color: white;
+}
+
+li {
+    padding-top: 7px;
+}
+
+.about-kingdoms,
+ul {
+    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+/* текст перед списком */
+.before-ul {
+    margin-left: 25px;
+    color: #9dbcf3;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+.text {
+    position: absolute;
+    top: 20px;
+    left: 55%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-right: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.922);
+}
+
+/* стилі до навігаційної панелі */
+nav {
+    margin: 25px;
+    font-size: 26px;
+    text-align: center;
+}
+
+a:hover {
+    background: linear-gradient(#6f3a8a, #9273c7);
+    padding: 13px;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.picture-two {
+    width: 57%;
+    margin: 20px;
+    float: right;
+    height: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.41);
+
+}
+
+/* картка з описом про королівство */
+.card-about {
+    background-color: #796ab8;
+    width: 39%;
+    border-radius: 15px;
+    margin-left: 12px;
+    padding: 4px;
+}
+
+.heroe {
+    text-align: center;
+    color: rgb(110, 19, 72);
+    text-shadow: 1px 1px 3px rgba(228, 211, 211, 0.655);
+    font-size: 64px;
+    font-weight: 900;
+    font-family: "Cormorant Infant", serif;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+/* рамка з написом герої */
+.border-heroe {
+    width: 40%;
+    margin: 15px;
+    margin-left: 31%;
+    border-radius: 52px;
+    background-color: #be93ce;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23380f4d' fill-opacity='0.41'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.border-heroe:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* персонаж люмен */
+.card-one {
+    background-color: #bdabcc;
+    border-radius: 25px;
+    width: 500px;
+    margin-left: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.662);
+    transition: all 0.7s ease;
+}
+
+.card-one:hover {
+    transform: scale(1.05);
+    background: linear-gradient(#552b78, #a17ede, #bf9cdb);
+    color: white;
+}
+
+.lumen {
+    width: 340px;
+    height: 340px;
+    padding-left: 80px;
+    padding-top: 25px;
+
+}
+
+.name-lumen {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+.text-card-one {
+    padding-left: 15px;
+    font-size: 20px;
+    padding: 15px;
+    color: #1c0824;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+/* картка про королеву */
+.card-two {
+    background-color: #bdabcc;
+    border-radius: 25px;
+    width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.662);
+    margin-left: 25px;
+    transition: all 0.7s ease;
+}
+
+.card-two:hover {
+    transform: scale(1.05);
+    background: linear-gradient(#bf9cdb, #a17ede, #552b78);
+    color: white;
+}
+
+.queen {
+    width: 340px;
+    height: 340px;
+    padding-left: 80px;
+    padding-top: 25px;
+}
+
+.name-queen {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+.text-card-two {
+    padding-left: 15px;
+    font-size: 20px;
+    padding: 15px;
+    color: #1c0824;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+/* картка про тінь розлому */
+.card-three {
+    background-color: #bdabcc;
+    border-radius: 25px;
+    width: 440px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.662);
+    margin-left: 25px;
+    transition: all 0.7s ease;
+}
+
+.card-three:hover {
+    transform: scale(1.05);
+    background: linear-gradient(#552b78, #a17ede, #bf9cdb);
+    color: white;
+}
+
+.shadow {
+    width: 340px;
+    height: 340px;
+    padding-left: 55px;
+    padding-top: 25px;
+}
+
+.name-shadow {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.SHADOW {
+    padding-top: 0;
+    color: #6232a8;
+    text-align: center;
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-card-three {
+    padding-left: 15px;
+    font-size: 20px;
+    padding: 15px;
+    color: #1c0824;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+.karta {
+    text-align: center;
+    color: rgb(99, 69, 189);
+    text-shadow: 1px 1px 3px rgb(57, 55, 64);
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Cormorant Infant", serif;
+}
+
+.karta:hover {
+    color: rgb(107, 31, 139);
+    transition: all 0.8s ease;
+}
+
+.map {
+    width: 50%;
+    height: 640px;
+    margin-left: 27px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.41);
+    float: left;
+}
+
+.about-map {
+    font-size: 20px;
+    position: absolute;
+    left: 54%;
+    margin-right: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+.picture-three {
+    width: 680px;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 240px;
+    margin-bottom: 20px;
+}
