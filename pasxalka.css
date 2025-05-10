@@ -28,14 +28,22 @@ h1 {
 }
 
 /* анімація появи тексту */
-h1{
-    opacity: 0; /*на початку цей текст буде невидимим*/
-    animation: fadeIn 1.5s ease-in forwards;/*тип анімації,тривалість,тип прискорення і зберагає кінцевий результат анімації */
+h1 {
+  opacity: 0;
+  /*на початку цей текст буде невидимим*/
+  animation: fadeIn 1.5s ease-in forwards;
+  /*тип анімації,тривалість,тип прискорення і зберагає кінцевий результат анімації */
 }
 
-@keyframes fadeIn { /*зробить анімацію видимою*/
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes fadeIn {
+  /*зробить анімацію видимою*/
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* картка один */
@@ -46,12 +54,14 @@ h1{
   margin-left: 20px;
   border-radius: 5px;
   position: relative;
-  overflow: hidden;
-  transition: all 0.8s ease-out-back(0.23, 1, 0.32, 1);
+  overflow: hidden; /*приховує зайвий зміст без скролу*/
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  /* анімація застосовується до всіх змін, має тривалість і плавною на початку, швидкою в середині, і повільною під кінець*/
 }
 
 .card-one:hover {
-  transform:scale(1.1);/*картка збільшиться в розмірі на 10%*/
+  transform: scale(1.1);/*збільшить елемент на 10%*/
+  /*картка збільшиться в розмірі на 10%*/
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -60,7 +70,8 @@ h1{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);/*переміщує по трьом осям і повертає на 45 градусів*/
+  /*зміщує елемент на 50% вліво і вгору відносно його власної ширини та висоти та повертає його на 45 градусів*/
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -104,7 +115,7 @@ h1{
   margin-left: 20px;
   border-radius: 5px;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /*приховує зайвий зміст без скролу*/
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -148,7 +159,7 @@ h1{
   left: 35%;
   border-radius: 5px;
   position: absolute;
-  overflow: hidden;
+  overflow: hidden; /*приховує зайвий зміст без скролу*/
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -192,7 +203,7 @@ h1{
   left: 35%;
   border-radius: 5px;
   position: absolute;
-  overflow: hidden;
+  overflow: hidden; /*приховує зайвий зміст без скролу*/
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -236,7 +247,7 @@ h1{
   left: 68%;
   border-radius: 5px;
   position: absolute;
-  overflow: hidden;
+  overflow: hidden; /*приховує зайвий зміст без скролу*/
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -280,7 +291,7 @@ h1{
   left: 68%;
   border-radius: 5px;
   position: absolute;
-  overflow: hidden;
+  overflow: hidden; /*приховує зайвий зміст без скролу*/
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -290,7 +301,7 @@ h1{
 }
 
 .card-six:hover .content-card {
-  transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(0deg); /*преміщує, але не повертає*/
   opacity: 1;
 }
 
